@@ -12,14 +12,14 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "--"
-    OWNER_ID = "Ha Ha"  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "Devil"
+    API_KEY = "1999978623:AAGLK-jEhLGMejvbBFSt5Yrdod_5Z2VZ6IY"
+    OWNER_ID = "1493164653"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "NOOBX7"
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
-    GBAN_LOGS = -1001303171265 #Channel ID here with -
+    GBAN_LOGS = -1001177749718 #Channel ID here with -
     LOAD = []
     NO_LOAD = ['translation', 'rss']   
     WEBHOOK = False
@@ -27,10 +27,10 @@ class Config(object):
 
     # OPTIONAL
     #ID Seperation format [1,2,3,4]
-    SUDO_USERS = get_user_list('elevated_users.json', 'sudos')  # List of id's -  (not usernames) for users which have sudo access to the bot.
-    DEV_USERS = get_user_list('elevated_users.json', 'devs')  # List of id's - (not usernames) for developers who will have the same perms as the owner
-    SUPPORT_USERS = get_user_list('elevated_users.json', 'supports')  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = get_user_list('elevated_users.json', 'whitelists')  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
+    SUDO_USERS = 1493164653', 'sudos')  # List of id's -  (not usernames) for users which have sudo access to the bot.
+    DEV_USERS = get_user_list('1493164653', 'devs')  # List of id's - (not usernames) for developers who will have the same perms as the owner
+    SUPPORT_USERS = get_user_list('1493164653', 'supports')  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
+    WHITELIST_USERS = get_user_list('1493164653', 'whitelists')  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = False  #Delete commands that users dont have access to, like delete /ban if a non admin uses it.
